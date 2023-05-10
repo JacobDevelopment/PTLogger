@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'io.jking'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'com.miglayout', name: 'miglayout-swing', version: '5.0'
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.6.0'
+}
+
