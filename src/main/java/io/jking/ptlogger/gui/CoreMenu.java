@@ -15,10 +15,19 @@ public class CoreMenu {
     }
 
     private Menu getSettingsMenu() {
-        final Menu settings = new Menu("Settings");
-        settings.addItems(new MenuItem("Connect To Database").onPressed(event -> {
-            new DatabaseLoginDialog();
+        final Menu settings = new Menu("Database");
+        settings.addItems(new MenuItem("Connect").onPressed(event -> {
+            final DatabaseLoginDialog loginDialog = new DatabaseLoginDialog();
+            if (loginDialog.isLoginSuccessful()) {
+                // TODO: Implement connecting to database.
+            }
         }));
+
+        settings.addItems(new MenuItem("Disconnect").onPressed(event -> {
+            // TODO: Implement disconnecting from the database.
+        }));
+
+
         return settings;
     }
 

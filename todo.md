@@ -10,5 +10,5 @@
 - [ ] Handle the event that happens when the connect button is pressed.
   - All fields should be inputted (not empty), otherwise the button will not be enabled?
 - It should be noted that the DB URL & DB Username have no direct correlation to admin privileges or the specific logged in trainer. These entities have not been listed nor thoroughly thought out yet.
-
+- [ ] Fix bug where if text is erased (after connect button is enabled), the button will disable.
 <hr>

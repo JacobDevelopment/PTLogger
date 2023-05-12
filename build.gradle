@@ -12,5 +12,6 @@ repositories {
 dependencies {
     implementation group: 'com.miglayout', name: 'miglayout-swing', version: '5.0'
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.6.0'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.0.1'
 }
 

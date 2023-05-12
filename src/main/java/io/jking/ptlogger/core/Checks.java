@@ -19,4 +19,12 @@ public class Checks {
         }
     }
 
+    public static boolean allNotEmpty(final String... strings) {
+        for (final String string : strings) {
+            if (string.isEmpty())
+                return false;
+        }
+        return true;
+    }
+
 }
